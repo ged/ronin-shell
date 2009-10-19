@@ -1,0 +1,24 @@
+--- 
+excluded_pkgfiles: []
+
+project_pubdir: /usr/local/www/public/code/
+project_pubhost: deveiate
+project_homepage: http://deveiate.org/roninsh.html
+rubyforge_group: deveiate
+project_requirements: {}
+
+project_description: "This is an experimental object-oriented command shell, in the same vein as rush (http://rush.heroku.com/) or\n\
+  Windows \"PowerShell\". "
+project_dependencies: 
+  pluginfactory: ">= 1.0.4"
+project_summary: An experimental object-oriented command shell.
+version_file: roninshell.rb
+additional_pkgfiles: []
+
+dev_dependencies: {}
+
+authors: 
+  Michael Granger: ged@FaerieMUD.org
+post_install_message: To fire up the shell, run 'roninsh'.
+project_name: Ronin Shell
+rubyforge_project: roninsh

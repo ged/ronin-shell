@@ -1,0 +1,18 @@
+= Ronin Shell
+
+This is an experimental object-oriented command shell, in the same vein as rush (http://rush.heroku.com/) or
+Windows "PowerShell".  
+
+You can check out the current development source with Subversion from the
+following URL:
+
+    http://repo.deveiate.org/RoninShell
+
+You can submit bug reports, suggestions, and read more about future plans at the
+project page:
+
+    http://deveiate.org/roninsh.html
+
+== License
+
+See the included LICENSE file for licensing details.
