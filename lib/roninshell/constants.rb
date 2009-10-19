@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding: utf-8
 
 require 'roninshell'
 
@@ -17,7 +18,10 @@ require 'roninshell'
 #
 module RoninShell::Constants
 
+	# The description output in the usage message
+	DESCRIPTION = "A masterless shell (浪人)."
+
+	# The default prompt
+	DEFAULT_PROMPT = '$> '
 
 end # module RoninShell::Constants
-
-
