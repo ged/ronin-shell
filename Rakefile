@@ -1,6 +1,6 @@
 #!rake
 #
-# Ronin Shell rakefile
+# RoninShell rakefile
 #
 # Based on various other Rakefiles, especially one by Ben Bleything
 #
@@ -52,7 +52,7 @@ DATADIR       = BASEDIR + 'data'
 
 MANUALDIR     = DOCSDIR + 'manual'
 
-PROJECT_NAME  = 'Ronin Shell'
+PROJECT_NAME  = 'RoninShell'
 PKG_NAME      = PROJECT_NAME.downcase
 PKG_SUMMARY   = 'An experimental object-oriented command shell.'
 

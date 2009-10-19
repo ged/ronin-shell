@@ -20,5 +20,5 @@ dev_dependencies: {}
 authors: 
   Michael Granger: ged@FaerieMUD.org
 post_install_message: To fire up the shell, run 'roninsh'.
-project_name: Ronin Shell
+project_name: RoninShell
 rubyforge_project: roninsh
