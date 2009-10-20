@@ -11,7 +11,9 @@ project_description: "This is an experimental object-oriented command shell, in 
   Windows \"PowerShell\". "
 project_dependencies: 
   pluginfactory: ">= 1.0.4"
-  columnize: ">= "
+  columnize: ">= 0.3.1"
+  genki-ruby-terminfo: ">= 0.1.1"
+  arika-ruby-termios: ">= 0.9.6"
 project_summary: An experimental object-oriented command shell.
 version_file: roninshell.rb
 additional_pkgfiles: []
