@@ -1,0 +1,55 @@
+h1. Ronin Shell
+
+This is an experimental object-oriented command shell, in the same vein as rush
+(http://rush.heroku.com/) or Windows "PowerShell".
+
+h2. Plans
+
+The stuff I definitely want to implement:
+
+* Proper pty 
+* Job control
+* Traditional @stdio@-based command pipelining.
+
+
+h3. Experimental Stuff
+
+Output from regular system commands are captured automatically, @_@ will be an
+IO opened to the last command's @STDOUT@, and @_err@, the last command's
+@STDERR@.
+
+  $> processes
+   PID TTY           TIME CMD
+   1 ??        14:01.77 /sbin/launchd
+  15 ??         0:56.58 /usr/libexec/kextd
+  16 ??         2:50.14 /usr/sbin/DirectoryService
+  17 ??         1:17.66 /usr/sbin/notifyd
+  18 ??         0:06.29 /usr/sbin/diskarbitrationd
+  19 ??         2:48.09 /usr/libexec/configd
+  20 ??         7:16.62 /usr/sbin/syslogd
+  21 ??         1:05.17 /usr/sbin/distnoted
+  [...]
+
+  $> _.grep( /notify/ )
+   17 ??         1:17.67 /usr/sbin/notifyd
+  275 ??         0:10.63 /usr/sbin/aosnotifyd
+
+  $> pid = _.first.split[0]
+  # => "17"
+
+h2. Hacking
+
+You can check out the current development source with Mercurial like so:
+
+    hg clone https://ged@bitbucket.org/ged/ronin-shell/
+
+You can submit bug reports, suggestions, and read more about future plans at the
+project page:
+
+    http://bitbucket.org/ged/ronin-shell/
+
+
+
+h2. License
+
+See the included LICENSE file for licensing details.

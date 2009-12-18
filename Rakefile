@@ -190,7 +190,10 @@ RUBYFORGE_PROJECT = 'roninsh'
 
 # Gem dependencies: gemname => version
 DEPENDENCIES = {
+	'columnize' => '>= 0.3.1',
 	'pluginfactory' => '>= 1.0.4',
+	'arika-ruby-termios' => '>= 0.9.6',
+	'genki-ruby-terminfo' => '>= 0.1.1',
 }
 
 # Developer Gem dependencies: gemname => version

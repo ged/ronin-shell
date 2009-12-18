@@ -56,5 +56,4 @@ module RoninShell::Constants
 	}
 
 
-
 end # module RoninShell::Constants
