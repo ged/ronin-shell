@@ -7,11 +7,15 @@ BEGIN {
 
 	libdir = basedir + "lib"
 
+	$LOAD_PATH.unshift( basedir.to_s ) unless $LOAD_PATH.include?( basedir.to_s )
 	$LOAD_PATH.unshift( libdir.to_s ) unless $LOAD_PATH.include?( libdir.to_s )
 }
 
-require 'roninshell'
+require 'rspec'
+
 require 'spec/lib/constants'
+
+require 'roninshell'
 
 
 ### RSpec helper functions.
@@ -85,6 +89,11 @@ module RoninShell::SpecHelpers
 
 end
 
+
+RSpec.configure do |config|
+	config.mock_with( :rspec )
+	config.include( RoninShell::SpecHelpers )
+end
 
 # vim: set nosta noet ts=4 sw=4:
 

@@ -7,19 +7,18 @@ BEGIN {
 	libdir = basedir + "lib"
 	extdir = basedir + "ext"
 
+	$LOAD_PATH.unshift( basedir.to_s ) unless $LOAD_PATH.include?( basedir.to_s )
 	$LOAD_PATH.unshift( libdir ) unless $LOAD_PATH.include?( libdir )
-	$LOAD_PATH.unshift( extdir ) unless $LOAD_PATH.include?( extdir )
 }
 
-require 'spec'
+require 'rspec'
+
 require 'spec/lib/constants'
 require 'spec/lib/helpers'
 
 require 'roninshell'
 require 'roninshell/mixins'
 
-include RoninShell::TestConstants
-include RoninShell::Constants
 
 #####################################################################
 ###	C O N T E X T S

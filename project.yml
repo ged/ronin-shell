@@ -1,27 +1,31 @@
 --- 
-excluded_pkgfiles: []
-
-project_pubdir: /usr/local/www/public/code/
-project_pubhost: deveiate
+project_name: RoninShell
 project_homepage: http://deveiate.org/roninsh.html
-rubyforge_group: deveiate
-project_requirements: {}
-
+project_summary: An experimental object-oriented command shell.
 project_description: "This is an experimental object-oriented command shell, in the same vein as rush (http://rush.heroku.com/) or\n\
   Windows \"PowerShell\". "
+project_pubhost: deveiate
+project_pubdir: /usr/local/www/public/code/
+project_licenses: 
+- BSD
+gem_pubhost: rubygems.org
+release_mailto: Ruby-Talk List <ruby-talk@ruby-lang.org>
+release_smtphost: mail.faeriemud.org
+post_install_message: To fire up the shell, run 'roninsh'.
+authors: 
+  Michael Granger: ged@FaerieMUD.org
 project_dependencies: 
   pluginfactory: ">= 1.0.4"
   columnize: ">= 0.3.1"
   genki-ruby-terminfo: ">= 0.1.1"
   arika-ruby-termios: ">= 0.9.6"
-project_summary: An experimental object-oriented command shell.
-version_file: roninshell.rb
-additional_pkgfiles: []
-
 dev_dependencies: {}
 
-authors: 
-  Michael Granger: ged@FaerieMUD.org
-post_install_message: To fire up the shell, run 'roninsh'.
-project_name: RoninShell
-rubyforge_project: roninsh
+project_requirements: {}
+
+additional_pkgfiles: []
+
+excluded_pkgfiles: []
+
+required_ruby_version: ">= 1.9.2"
+version_file: roninshell.rb

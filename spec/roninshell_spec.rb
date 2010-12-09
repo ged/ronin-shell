@@ -5,26 +5,25 @@ BEGIN {
 	basedir = Pathname.new( __FILE__ ).dirname.parent
 
 	libdir = basedir + "lib"
+
+	$LOAD_PATH.unshift( basedir.to_s ) unless $LOAD_PATH.include?( basedir.to_s )
 	$LOAD_PATH.unshift( libdir ) unless $LOAD_PATH.include?( libdir )
 }
 
-require 'spec'
+require 'rspec'
+
 require 'spec/lib/constants'
 require 'spec/lib/helpers'
 
 require 'roninshell'
 require 'roninshell/cli'
 
-include RoninShell::TestConstants
-include RoninShell::Constants
 
 #####################################################################
 ###	C O N T E X T S
 #####################################################################
 
 describe RoninShell do
-	include RoninShell::SpecHelpers
-
 
 	before( :all ) do
 		setup_logging( :debug )
